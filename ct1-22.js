@@ -6,4 +6,8 @@ function solution(a, b) {
   }
   return answer;
 }
-console.log(solution([1, 2, 3, 4], [-3, -1, 0, 2]));
+//다른사람의 풀이
+
+function solution(a, b) {
+  return a.reduce((acc, _, i) => (acc += a[i] * b[i]), 0);
+}
